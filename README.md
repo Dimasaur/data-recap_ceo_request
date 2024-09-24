@@ -1,6 +1,31 @@
-🏋️‍♀️ This is the final challenge of the week (you have until the end of the Communicate topic to complete it).
+🏋️‍♀️ Optimization challenge as a part of Le Wagon's Data Science course
 
-**Before diving into it, take time to finish the challenge 02 on sellers analysis (Liner Regression topic)**.
+## Objective
+
+Analyze a dataset provided by an e-commerce marketplace called Olist to answer the CEO’s question: How could Olist increase its profit?
+
+## Description
+Olist is a leading e-commerce service that connects merchants to main marketplaces in Brazil. They provide a wide range of offers including inventory management, dealing with reviews and customer contacts to logistic services.
+
+Olist charges sellers a monthly fee. This fee is progressive with the volume of orders.
+
+Here are the seller and customer workflows:
+
+Seller:
+
+Seller joins Olist
+Seller uploads products catalogue
+Seller gets notified when a product is sold
+Seller hands over an item to the logistic carrier
+👉 Note that multiple sellers can be involved in one customer order!
+
+Customer:
+
+Browses products on the marketplace
+Purchases products from Olist.store
+Gets an expected date for delivery
+Receives the order
+Leaves a review about the order
 
 ## Problem
 
@@ -10,15 +35,7 @@
 > - some reputation costs (estimated) per bad reviews
 > - some operational costs of IT system that grows with number of order items, but not linearly (scale effects)
 
-<details>
-  <summary markdown='span'>💡 Hints</summary>
-- You may want to compute the review cost of each order first, then sum these costs by seller.
-</details>
 
-## ✏️ Your turn!
+## Dataset
 
-👉 **Open the `ceo_request.ipynb` notebook and start from there.**
-
-- We'll start from a new Notebook
-- Refrain from re-using from previous notebooks - they were made for investigation only
-- All your re-usable logic is coded in `olist/*.py` scripts
+The dataset consists of ~100k orders from 2016 and 2018 that were made on the Olist store, available as csv files
